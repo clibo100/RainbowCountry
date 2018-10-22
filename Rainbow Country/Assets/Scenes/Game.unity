@@ -545,6 +545,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 546888532}
+  timerBackground: {fileID: 1511007113}
+  camera1: {fileID: 390922288}
+  camera2: {fileID: 574681741}
 --- !u!4 &1475059562
 Transform:
   m_ObjectHideFlags: 0

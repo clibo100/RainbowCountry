@@ -26,7 +26,7 @@ public class ExitButton : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        gameObject.GetComponent<TextMesh>().color = Color.magenta;
+        gameObject.GetComponent<TextMesh>().color = Random.ColorHSV(0f, 1f, 1f, 1f, 1f, 1f);
     }
 
     private void OnMouseExit()
