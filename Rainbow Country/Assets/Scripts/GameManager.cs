@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour {
     public GameObject camera1;
     public GameObject camera2;
 
+    public GameObject player1;
+    public GameObject player2;
+
+
 	// Use this for initialization
 	void Start () {
         timerText.SetActive(true);
@@ -38,6 +42,8 @@ public class GameManager : MonoBehaviour {
         if (Mathf.Round(timer) <= 0 && timer2 > 0)
         {
             timerText.GetComponent<Text>().text = "GO!";
+            player1.SetActive(true);
+            player2.SetActive(true);
             if (!hasSetColors)
             {
                 Color color1 = Random.ColorHSV(0f, 1f, 1f, 1f, 1f, 1f);
