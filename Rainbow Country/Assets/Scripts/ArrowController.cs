@@ -18,10 +18,12 @@ public class ArrowController : MonoBehaviour {
             if (Input.GetKey(KeyCode.A))
             {
                 transform.Rotate(0, 0, 1f);
+                Debug.Log("ROTATION: " + transform.rotation.eulerAngles);
             }
             if (Input.GetKey(KeyCode.D))
             {
                 transform.Rotate(0, 0, -1f);
+                Debug.Log("ROTATION: " + transform.rotation.eulerAngles);
             }
         }
 
@@ -30,10 +32,12 @@ public class ArrowController : MonoBehaviour {
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 transform.Rotate(0, 0, 1f);
+                Debug.Log("ROTATION: " + transform.rotation.eulerAngles);
             }
             if (Input.GetKey(KeyCode.RightArrow))
             {
                 transform.Rotate(0, 0, -1f);
+                Debug.Log("ROTATION: " + transform.rotation.eulerAngles);
             }
         }
     }
